@@ -80,3 +80,41 @@ li:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.box {
+   background-color: #fff;
+   padding: 12px 20px;
+   border-radius: 4px;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0,0.1)s
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4acf50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
