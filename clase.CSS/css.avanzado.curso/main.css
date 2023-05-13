@@ -1,0 +1,58 @@
+body {
+    background-color: #eee;
+}
+
+/*.fondo {
+    height: 600px;
+    background-color: blanchedalmond;
+    background-image: url(https://cdn.pixabay.com/photo/2022/05/20/15/06/reggae-7209640_640.jpg);
+    background-repeat: no-repeat;
+    background-position: none;
+    background-attachment: fixed;
+    background-size: cover;
+     
+}*/
+
+.fondo {
+   /* background-color: rgba(0, 0, 0, 0.1);*/
+    /*en la etiquet de (rgba) el primero es el rojo, segundo verde,tercero es el azul*/
+    /*background-color: hsl(120, 60%, 40%, 0.3);*/
+    /*La etiqueta de (hsl) se le puede dar brillo, desde huge se puede colocar desde 100 rojo,
+    120 es verde y 240 es azul, la segunda es la saturacion,la tercera es el brillo 
+    y la cuarta es la opacidad */
+    background-image: linear-gradient(0deg,red,blue,yellow);
+    /*despues de linear-gradient (direccion,color1,color2*/
+}
+
+.box {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0,0.4); 
+ /*se puede utilizar (inset) para hacer el efecto de que el elemento
+ esta hundido*/   
+}
+
+.text {
+    color: white;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.4); 
+}
+
+.box {
+    position: relative;
+    left: 0px;
+    top: 50px;
+    width: 70px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0,0.7);
+    /*transform:rotate(20deg); */
+    /*transform: translate(50px, 20px);*/
+    /*transform:scale(0.9,0.9);*/
+    /*transform:skew(10deg, 5deg);*/
+
+}
+
+.box:hover {
+    /*transform:scale(0.8,0.8);*/
+     
+}
+
+
