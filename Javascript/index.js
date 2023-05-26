@@ -127,5 +127,40 @@ console.log(resultadoNot);
 if (true) {
     console.log('estoy dentro de un if');
 }
+const edad = 10
+if (edad > 5 && edad <18) {
+    console.log ('el niño pede jugar');
+} else {
+    console.log('el niño no puede jugar :(');   
+}
+
+// control de flujo:while 
+let x = 0
+while (x < 5) {
+    console.log(x);
+    x++
+}
+
+console.log('terminando el loop');
+
+// control de flujo: switch
+//let y = 3
+switch (1) {
+   case 1: {
+    console.log('yo soy el caso 1');
+    break;
+   }
+   case 2: {
+    console.log('yo soy el caso 2');
+    break;
+   } 
+   case 3: 
+    console.log('yo soy el caso 3');
+    break;   
+    default:
+        console.log('no hay caso');
+        break;
+}
+
 
 
