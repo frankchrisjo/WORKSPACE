@@ -9,14 +9,18 @@ body {
     /*grid-template-columns: [col-1-inicio] 1fr [col-2-start] 1fr
     [col-3-star] 1fr [col-4-end];*/
     /*grid-template-columns: repeat(3, [col-inicio] 1fr [col-fin]);
-    grid-gap: 15px;*/
+    grid-row-gap: 15px; Esta se puede hacer para dejar espacio
+      grid-column-gap: Esta se puede hacer para dejar espacio
+    se puede agregar un grid-template-rows:mimax (100px, out);
+     grid-template-columns: mimax (auto, 50%);
+     grid-gap: es para dejar espacio*/
     grid-template-areas: "header header"
                          "content sidebar"
                          "footer footer";
     grid-template-rows: 150px 1fr 100px;                     
-    grid-template-columns: 1fr 200px; 
-     justify-items: stretch; 
-     align-items: stretch;                     
+    grid-template-columns: 1fr 200px;  
+     /*justify-items: stretch; toma el contenido del elemento y lo ubica
+     align-items: stretch; toma el contenido del elemento y lo ubica dependiendo del espacio utilizado*/                     
 }
 
 .red {
@@ -46,5 +50,6 @@ body {
     y grid-row: 1/3;*/
 }
 
-
+/* grid-auto-rows: es para ajustar los elementos que no estaban definidas en .grid
+ */
 

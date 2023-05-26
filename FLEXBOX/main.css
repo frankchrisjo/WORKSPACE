@@ -1,0 +1,36 @@
+/*body {
+    width: 200px;
+}*/
+
+.flex {
+    display: flex;
+    /*flex-direction: row; esto cambia de direccion el contenido*/
+    /*flex-wrap: nowrap; funciona para encajar el contenido, lo agrupa*/
+    /* flex-flow: puedes utilizarlo como atajo para unir direction y wrap*/
+    /*justify-content: flex-end; es lo mismo que en grid*/
+    align-items: stretch;
+    height: 200px;
+    /* align-content: indica como vas a distribuir el cntenido pero dentro de los 200px*/
+    
+}
+
+.primero {
+    /*order:  3; esto quiere decir que se van al final si los demas elemento no se enumeran*/
+/* flex-grow: 1; le permite crecer a los elementos de forma dinamica mientras este el espacio*/
+/* flex-basis: 150px; se utiliza para darle un tamaño inicial al elemento que se esta definiendo
+se utiliza en conjunto con el flex-grow, le dara un ancho.*/
+/* flex: 1 120px; se [uede utilizar para indicar el grow y basis
+   align-self: permite alinear todos los items con vase al eje principal que estamos utilizando */
+
+}
+
+.segundo {
+    /*order: 2;*/
+}
+
+.tercero {
+    /*order: 1;*/
+}
+
+/* float, clear, vertical-align no tienen ningun efecto dentro de los elementos de flex*/
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- colocar el codigo de css desde el inicio y de esa manera evitar errores
+<link rel= "stylesheet" href="main.css" type="text/css"  />
+El formato de color puede ser normalmente HEXADECIMAL,se compone de 6 caracteres,
+ por ejemplo: #fff000 
+Para seleccionar elemento por su id hay que utlizar (#)
+Para seleccionar una clase se hace con un (.)
+La etiqueta de borde-style: puede tener solid, dotted,double, groove, ridge, inset, outset, hidden y dashed
+La etiqueta de border-width: se puede asignar en px.
+La propiedad de border-radius: le da un borde redondiado y se asigna con px;
+La propiedad de tex-align: funciona para darle una ubicacion al text,
+ podemos utilizar: right,left, justify y center
+La propiedad de text-decoration: funciona para darle una decoracion al texto
+La propiedad de text-transform: modifica el texto
+ como por ejemplo: lowercase,capitalize, uppercase
+La propiedad text-indent: es para realizarle a la primera linea una indentacion.
+La propiedad de letter-spacing: lo que hace un espacio en el text y se asigna con px
+La propiedad de line-height: es para darle un alto a la linea y se asigna por ejemplo 1.7
+La propiedad word-spacing: es para asignar un espacio en cada palabra y se signa con px
+La propiedad text-shadow: 5px 2px 2px rgba(0,0,0,0.2) es para darle sombra y se asigna con px
+La propiedad de font-family: es para cambiar la fuente, por ejemplo: "Monaco" "times new roman"
+La propiedad font-style: oblique, italy; funciona para darle estilo a la fuente
+ tambien esta la propiedad font-size: 1em; para darle el tamaño de la fuente generalmente se utiliza em
+La propiedad font-weight: bold; es para darle un peso a la fuente 
+ por ejemplo se puede utilizar numeros desde el 100 hasta el 900 dependiendo la propiedad de fuente
+La propiedad de link se le puede asignar por ejemplo: a:link, a:visited, a:active, a:hover
+A un listado se le puede agredar la propiedades de list-style-type: circle, square,upper-roman
+ lower-alpha;
+La propiedad tr:nth-child(even/oven) es para tomar una fila si y una no 
+La propiedad de border-collapse: collapse; quita el borde de la tabla
+La propiedad de <p>, <h1> hasta <h6>, <div>,<form>, <header>, <section> y <footer> son bloques
+     y la propiedad de <span>, <a>,<img> son inline
+La propiedad de display: inline; puedes utilizarla para colocar <p> como inline
+La propiedad de max-width: que se asigna con px, es para indicar que es el ancho maximo que va a utilizar
+La propiedad de position: funciona para cambiar la posicion del elemento
+La propiedad de overflow: es para asignarle bordes al contenido si queremos que la caja sea scroll
+    y tambien se puede utilizar overflow-y/x:
+img {
+    float: left; este toma el texto y lo coloca en el espacio disponible
+} 
+opacity: el valor es del 0 al 1. Y se le puede agregar un hover, y este ndica que se pone opaco la imagen
+    cuando le pasamos el mouse por encima
+Para realizar una barra de navegacion, se utiliza:
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    posittion: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: #333;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li:hover {
+    backgrond-color: rgba(0,0,0,0.1);
+}
+
+.active {
+    background-color: #4caf50;
+}
+
+Para realizar un dropdown menu se tiene que utilizar lo siguien:
+
+.dropdown-btn {
+   background-color: #4caf50;
+   color: white;
+   padding: 16px;
+   font-size:16px;
+    border: none;
+    cursor: pointer; este funciona para darle forma de manito cuando pasas el mouse por encima
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #4caf50;
+    min-width: 160px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+
+}
+
+.dropdown:hover .dropdown-btn {
+   background-color: #3e8e41; 
+}
+
+.dropdown;hover .dropdown-content {
+    display: block;
+}
+
+Para realizar el formulario de contenido, seria:
+
+input [type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input [type=submit] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+     border: none;
+     border-radius: 4px;
+     cursor:pointer;
+
+}
+
+textarea {
+     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;   
+}
+Para realizar un background agregando una imagen
+
+.fondo {
+    height: 300px;
+    background-color: red;
+    background-image: url('xxxxxxxxxxx')       
+    background-repeat: no-repeat; pero este deja un fondo para cubrir
+    background-position: para ubicar la imagen
+    background-attachment: fixed; para que la imagen baje con nosotros
+    background-size: cover; la imagen cubre todo el espacio, funciona mucho para cabezera
+
+ se puede ubicar toda la informacion en una sola opcion
+}
+
+Para agregar gradiantes tenemos que utilizar background-image: linear-gradient(direccion,color1,color2) este es el orden 
+ se le puede indicar igual la direccion en deg.
+
+A la caja se le puede dar el valor de transform: rotate(20deg); se le puede dar negativo
+ esta tambien la propiedad de  transform: translate (50px, 10px);
+ se puede cambiar la dimensiones del elemento transform: scale(2, 2);
+                                              transform: skewx(25deg);
+ se le puede colocar un selector cuando se pase el mouse por encima, por ejemplo:
+
+ .box:hover {
+    transform: scale (1.05, 1.05);
+ }
+
+funciona para hacer la caja en e dimensiones
+    transform: rotatey(20deg);  
+               rotatez(20deg);
+
+Para realizar una transicion:
+ transition: width 0.3s;
+
+ .box:hover {
+    width: 150px;
+ }
+ se puede realizar otra funcion si agrekgamos:
+
+ .box:hover {
+    transform: scale(1.05,1.05);
+ }
+ se le puede agregar un background-color para darle un fundo cuando el mouse pase por encima
+ se puede dejar un:
+  transition-delay:
+
+
+
+-->
